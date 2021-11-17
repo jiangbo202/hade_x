@@ -20,40 +20,14 @@ func AddKernelCommands(root *cobra.Command) {
 	root.AddCommand(initCronCommand())
 	// config 命令
 	root.AddCommand(initConfigCommand())
-	//// cmd
-	//cmdCommand.AddCommand(cmdListCommand)
-	//cmdCommand.AddCommand(cmdCreateCommand)
-	//root.AddCommand(cmdCommand)
-	//
-	//// build
-	//buildCommand.AddCommand(buildSelfCommand)
-	//buildCommand.AddCommand(buildBackendCommand)
-	//buildCommand.AddCommand(buildFrontendCommand)
-	//buildCommand.AddCommand(buildAllCommand)
+  // 编译命令
 	root.AddCommand(initBuildCommand())
-	//
-	//// app
-	root.AddCommand(initAppCommand())
-	//
-	//// dev
+	// 调试命令
 	root.AddCommand(initDevCommand())
-	//
-	//// middleware
-	//middlewareCommand.AddCommand(middlewareAllCommand)
-	//middlewareCommand.AddCommand(middlewareAddCommand)
-	//middlewareCommand.AddCommand(middlewareRemoveCommand)
-	//root.AddCommand(middlewareCommand)
-	//
-	//// swagger
-	//swagger.IndexCommand.AddCommand(swagger.InitServeCommand())
-	//swagger.IndexCommand.AddCommand(swagger.GenCommand)
-	//root.AddCommand(swagger.IndexCommand)
-	//
-	//// provider
-	//providerCommand.AddCommand(providerListCommand)
-	//providerCommand.AddCommand(providerCreateCommand)
-	//root.AddCommand(providerCommand)
-	//
-	//// new
-	//root.AddCommand(initNewCommand())
+	// 服务提供命令
+  root.AddCommand(initProviderCommand())
+  // 自动化命令
+  root.AddCommand(initCmdCommand())
+  // 自动化中间件迁移工具
+  root.AddCommand(initMiddlewareCommand())
 }

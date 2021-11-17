@@ -116,8 +116,13 @@ func (p *Proxy) newProxyReverseProxy(frontend, backend *url.URL) *httputil.Rever
   // 两个都有进程
   // 先创建一个后端服务的directory
   director := func(req *http.Request) {
-    req.URL.Scheme = backend.Scheme
-    req.URL.Host = backend.Host
+    if req.URL.Path == "/" || req.URL.Path == "/app.js" {
+      req.URL.Scheme = frontend.Scheme
+      req.URL.Host = frontend.Host
+    } else {
+      req.URL.Scheme = backend.Scheme
+      req.URL.Host = backend.Host
+    }
   }
 
   // 定义一个NotFoundErr
@@ -184,9 +189,12 @@ func (p *Proxy) restartBackend() error {
 func (p *Proxy) restartFrontend() error {
   // 启动前端调试模式
   // 如果已经开启了npm run serve， 什么都不做
+  // 先杀死旧进程
   if p.frontendPid != 0 {
-    return nil
+    syscall.Kill(p.frontendPid, syscall.SIGKILL)
+    p.frontendPid = 0
   }
+
 
   // 否则开启npm run serve
   port := p.devConfig.Frontend.Port

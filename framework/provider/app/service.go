@@ -63,14 +63,14 @@ func (j JiangApp) HttpFolder() string {
 	if val, ok := j.configMap["http_folder"]; ok {
 		return val
 	}
-	return filepath.Join(j.BaseFolder(), "http")
+	return filepath.Join(j.BaseFolder(), "app", "http")
 }
 
 func (j JiangApp) ConsoleFolder() string {
 	if val, ok := j.configMap["console_folder"]; ok {
 		return val
 	}
-	return filepath.Join(j.BaseFolder(), "console")
+	return filepath.Join(j.BaseFolder(), "app", "console")
 }
 
 func (j JiangApp) StorageFolder() string {
@@ -85,7 +85,7 @@ func (j JiangApp) ProviderFolder() string {
 	if val, ok := j.configMap["provider_folder"]; ok {
 		return val
 	}
-	return filepath.Join(j.BaseFolder(), "provider")
+	return filepath.Join(j.BaseFolder(), "app", "provider")
 }
 
 // MiddlewareFolder 定义业务自己定义的中间件

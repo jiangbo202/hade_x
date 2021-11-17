@@ -48,7 +48,7 @@ func (api *DemoApi) Demo(c *gin.Context) {
 
 	confService := c.MustMake(contract.ConfigKey).(contract.Config)
 	pawd := confService.GetString("database.mysql.password")
-
+  pawd = "sdfsdfsdfsdf"
 	c.JSON(200, pawd)
 }
 

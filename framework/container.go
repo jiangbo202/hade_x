@@ -60,6 +60,15 @@ func (i *JContainer) PrintProviders() []string {
 	return ret
 }
 
+func (i *JContainer) NameList() []string {
+  var ret []string
+  for _, provider := range i.providers {
+    name := provider.Name()
+    ret = append(ret, name)
+  }
+  return ret
+}
+
 func (i *JContainer) Bind(provider ServiceProvider) error {
 	i.lock.Lock()
 	key := provider.Name()
