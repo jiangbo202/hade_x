@@ -10,9 +10,9 @@ package command
 
 import (
 	"fmt"
-	"github.com/gojiangbo/jiangbo/framework/cobra"
-	"github.com/gojiangbo/jiangbo/framework/contract"
-	"github.com/gojiangbo/jiangbo/framework/util"
+	"github.com/jiangbo202/hade_x/framework/cobra"
+	"github.com/jiangbo202/hade_x/framework/contract"
+	"github.com/jiangbo202/hade_x/framework/util"
 )
 
 // initEnvCommand 获取env相关的命令

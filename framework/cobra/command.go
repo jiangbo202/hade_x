@@ -19,7 +19,7 @@ import (
 	"bytes"
 	"context"
 	"fmt"
-	"github.com/gojiangbo/jiangbo/framework"
+	"github.com/jiangbo202/hade_x/framework"
 	"github.com/robfig/cron/v3"
 	"io"
 	"os"

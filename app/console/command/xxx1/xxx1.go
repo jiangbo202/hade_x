@@ -3,7 +3,7 @@ package xxx1
 import (
 	"fmt"
 
-	"github.com/gojiangbo/jiangbo/framework/cobra"
+	"github.com/jiangbo202/hade_x/framework/cobra"
 )
 
 var Xxx1Command = &cobra.Command{

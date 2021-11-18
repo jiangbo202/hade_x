@@ -5,15 +5,15 @@ panic: runtime error: invalid memory address or nil pointer dereference
 goroutine 1 [running]:
 github.com/robfig/cron/v3.(*Cron).Run(0x0)
 	/Users/jiangbo/go/pkg/mod/github.com/robfig/cron/v3@v3.0.1/cron.go:227 +0x2d
-github.com/gojiangbo/jiangbo/framework/command.glob..func5(0x4b6d160, 0xc000386630, 0x0, 0x1, 0x0, 0x0)
+github.com/jiangbo202/hade_x/framework/command.glob..func5(0x4b6d160, 0xc000386630, 0x0, 0x1, 0x0, 0x0)
 	/Users/jiangbo/jiang/go_2021_dir/from0/gk02/framework/command/cron.go:104 +0x568
-github.com/gojiangbo/jiangbo/framework/cobra.(*Command).execute(0x4b6d160, 0xc000386610, 0x1, 0x1, 0x4b6d160, 0xc000386610)
+github.com/jiangbo202/hade_x/framework/cobra.(*Command).execute(0x4b6d160, 0xc000386610, 0x1, 0x1, 0x4b6d160, 0xc000386610)
 	/Users/jiangbo/jiang/go_2021_dir/from0/gk02/framework/cobra/command.go:865 +0x47c
-github.com/gojiangbo/jiangbo/framework/cobra.(*Command).ExecuteC(0xc0003a6840, 0xc0003a6840, 0xc000390420, 0xc000390420)
+github.com/jiangbo202/hade_x/framework/cobra.(*Command).ExecuteC(0xc0003a6840, 0xc0003a6840, 0xc000390420, 0xc000390420)
 	/Users/jiangbo/jiang/go_2021_dir/from0/gk02/framework/cobra/command.go:983 +0x375
-github.com/gojiangbo/jiangbo/framework/cobra.(*Command).Execute(...)
+github.com/jiangbo202/hade_x/framework/cobra.(*Command).Execute(...)
 	/Users/jiangbo/jiang/go_2021_dir/from0/gk02/framework/cobra/command.go:911
-github.com/gojiangbo/jiangbo/app/console.RunCommand(0x47e91a0, 0xc000390400, 0xc0003880b0, 0x0)
+github.com/jiangbo202/hade_x/app/console.RunCommand(0x47e91a0, 0xc000390400, 0xc0003880b0, 0x0)
 	/Users/jiangbo/jiang/go_2021_dir/from0/gk02/app/console/kernel.go:45 +0xd3
 main.main()
 	/Users/jiangbo/jiang/go_2021_dir/from0/gk02/main.go:28 +0xde

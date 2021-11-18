@@ -9,7 +9,7 @@
 package demo
 
 import (
-	demoService "github.com/gojiangbo/jiangbo/app/provider/demo"
+	demoService "github.com/jiangbo202/hade_x/app/provider/demo"
 )
 
 func UserModelsToUserDTOs(models []UserModel) []UserDTO {

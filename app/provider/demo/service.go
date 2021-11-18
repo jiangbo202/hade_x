@@ -8,7 +8,7 @@
 
 package demo
 
-import "github.com/gojiangbo/jiangbo/framework"
+import "github.com/jiangbo202/hade_x/framework"
 
 type Service struct {
 	container framework.Container

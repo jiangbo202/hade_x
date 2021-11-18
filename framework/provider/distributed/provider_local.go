@@ -1,8 +1,8 @@
 package distributed
 
 import (
-	"github.com/gojiangbo/jiangbo/framework"
-	"github.com/gojiangbo/jiangbo/framework/contract"
+	"github.com/jiangbo202/hade_x/framework"
+	"github.com/jiangbo202/hade_x/framework/contract"
 )
 
 // LocalDistributedProvider 提供App的具体实现方法

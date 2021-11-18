@@ -13,9 +13,9 @@ import (
   "fmt"
   "github.com/AlecAivazis/survey/v2"
   "github.com/go-git/go-git/v5"
-  "github.com/gojiangbo/jiangbo/framework/cobra"
-  "github.com/gojiangbo/jiangbo/framework/contract"
-  "github.com/gojiangbo/jiangbo/framework/util"
+  "github.com/jiangbo202/hade_x/framework/cobra"
+  "github.com/jiangbo202/hade_x/framework/contract"
+  "github.com/jiangbo202/hade_x/framework/util"
   "github.com/pkg/errors"
   "io/ioutil"
   "os"
@@ -127,7 +127,7 @@ var middlewareMigrateCommand = &cobra.Command{
       isContain := bytes.Contains(c, []byte("github.com/gin-gonic/gin"))
       if isContain {
         fmt.Println("更新文件:" + path)
-        c = bytes.ReplaceAll(c, []byte("github.com/gin-gonic/gin"), []byte("github.com/gojiangbo/jiangbo/framework/gin"))
+        c = bytes.ReplaceAll(c, []byte("github.com/gin-gonic/gin"), []byte("github.com/jiangbo202/hade_x/framework/gin"))
         err = ioutil.WriteFile(path, c, 0644)
         if err != nil {
           return err
@@ -211,7 +211,7 @@ var middlewareCreateCommand = &cobra.Command{
 
 var middlewareTmp string = `package {{.}}
 
-import "github.com/gojiangbo/jiangbo/framework/gin"
+import "github.com/jiangbo202/hade_x/framework/gin"
 
 // {{.|title}}Middleware 代表中间件函数
 func {{.|title}}Middleware() gin.HandlerFunc {

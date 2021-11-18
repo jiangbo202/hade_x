@@ -8,7 +8,7 @@
 
 package gin
 
-import "github.com/gojiangbo/jiangbo/framework"
+import "github.com/jiangbo202/hade_x/framework"
 
 func (engine *Engine) SetContainer(container framework.Container) {
 	engine.container = container

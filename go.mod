@@ -1,4 +1,4 @@
-module github.com/gojiangbo/jiangbo
+module github.com/jiangbo202/hade_x
 
 go 1.15
 

@@ -1,6 +1,6 @@
 package user
 
-import "github.com/gojiangbo/jiangbo/framework"
+import "github.com/jiangbo202/hade_x/framework"
 
 type UserService struct {
 	container framework.Container

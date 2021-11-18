@@ -9,9 +9,9 @@
 package demo
 
 import (
-	demoService "github.com/gojiangbo/jiangbo/app/provider/demo"
-	"github.com/gojiangbo/jiangbo/framework/contract"
-	"github.com/gojiangbo/jiangbo/framework/gin"
+	demoService "github.com/jiangbo202/hade_x/app/provider/demo"
+	"github.com/jiangbo202/hade_x/framework/contract"
+	"github.com/jiangbo202/hade_x/framework/gin"
 )
 
 type DemoApi struct {

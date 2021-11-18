@@ -6,7 +6,7 @@ package gin
 
 import (
 	"fmt"
-	"github.com/gojiangbo/jiangbo/framework"
+	"github.com/jiangbo202/hade_x/framework"
 	"html/template"
 	"net"
 	"net/http"
@@ -15,8 +15,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/gojiangbo/jiangbo/framework/gin/internal/bytesconv"
-	"github.com/gojiangbo/jiangbo/framework/gin/render"
+	"github.com/jiangbo202/hade_x/framework/gin/internal/bytesconv"
+	"github.com/jiangbo202/hade_x/framework/gin/render"
 )
 
 const defaultMultipartMemory = 32 << 20 // 32 MB

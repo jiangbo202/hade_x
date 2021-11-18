@@ -13,7 +13,7 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/gojiangbo/jiangbo/framework/contract"
+	"github.com/jiangbo202/hade_x/framework/contract"
 	"io"
 	"os"
 	"path"

@@ -1,14 +1,14 @@
 package main
 
 import (
-	"github.com/gojiangbo/jiangbo/app/console"
-	"github.com/gojiangbo/jiangbo/app/http"
-	"github.com/gojiangbo/jiangbo/framework"
-	"github.com/gojiangbo/jiangbo/framework/provider/app"
-	"github.com/gojiangbo/jiangbo/framework/provider/config"
-	"github.com/gojiangbo/jiangbo/framework/provider/distributed"
-	"github.com/gojiangbo/jiangbo/framework/provider/env"
-	"github.com/gojiangbo/jiangbo/framework/provider/kernel"
+	"github.com/jiangbo202/hade_x/app/console"
+	"github.com/jiangbo202/hade_x/app/http"
+	"github.com/jiangbo202/hade_x/framework"
+	"github.com/jiangbo202/hade_x/framework/provider/app"
+	"github.com/jiangbo202/hade_x/framework/provider/config"
+	"github.com/jiangbo202/hade_x/framework/provider/distributed"
+	"github.com/jiangbo202/hade_x/framework/provider/env"
+	"github.com/jiangbo202/hade_x/framework/provider/kernel"
 )
 
 /**

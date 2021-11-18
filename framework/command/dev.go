@@ -11,10 +11,10 @@ package command
 import (
   "fmt"
   "github.com/fsnotify/fsnotify"
-  "github.com/gojiangbo/jiangbo/framework"
-	"github.com/gojiangbo/jiangbo/framework/cobra"
-	"github.com/gojiangbo/jiangbo/framework/contract"
-  "github.com/gojiangbo/jiangbo/framework/util"
+  "github.com/jiangbo202/hade_x/framework"
+	"github.com/jiangbo202/hade_x/framework/cobra"
+	"github.com/jiangbo202/hade_x/framework/contract"
+  "github.com/jiangbo202/hade_x/framework/util"
   "github.com/pkg/errors"
   "net/http"
   "net/http/httputil"
@@ -147,7 +147,7 @@ func (p *Proxy) newProxyReverseProxy(frontend, backend *url.URL) *httputil.Rever
 // rebuildBackend 重新编译后端
 func (p *Proxy) rebuildBackend() error {
   // 重新编译hade
-  cmdBuild := exec.Command("./jiangbo", "build", "backend")
+  cmdBuild := exec.Command("./hade_x", "build", "backend")
   cmdBuild.Stdout = os.Stdout
   cmdBuild.Stderr = os.Stderr
   if err := cmdBuild.Start(); err == nil {
@@ -172,7 +172,7 @@ func (p *Proxy) restartBackend() error {
   port := p.devConfig.Backend.Port
   hadeAddress := fmt.Sprintf(":" + port)
   // 使用命令行启动后端进程
-  cmd := exec.Command("./jiangbo", "app", "start", "--address="+hadeAddress)
+  cmd := exec.Command("./hade_x", "app", "start", "--address="+hadeAddress)
   cmd.Stdout = os.NewFile(0, os.DevNull)
   cmd.Stderr = os.Stderr
   fmt.Println("启动后端服务: ", "http://127.0.0.1:"+port)

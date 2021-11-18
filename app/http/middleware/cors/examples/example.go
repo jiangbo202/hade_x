@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/gin-contrib/cors"
-	"github.com/gojiangbo/jiangbo/framework/gin"
+	"github.com/jiangbo202/hade_x/framework/gin"
 )
 
 func main() {

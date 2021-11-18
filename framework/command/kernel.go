@@ -8,7 +8,7 @@
 
 package command
 
-import "github.com/gojiangbo/jiangbo/framework/cobra"
+import "github.com/jiangbo202/hade_x/framework/cobra"
 
 // AddKernelCommands will add all command/* to root command
 func AddKernelCommands(root *cobra.Command) {

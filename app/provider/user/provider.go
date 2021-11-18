@@ -1,7 +1,7 @@
 package user
 
 import (
-	"github.com/gojiangbo/jiangbo/framework"
+	"github.com/jiangbo202/hade_x/framework"
 )
 
 type UserProvider struct {

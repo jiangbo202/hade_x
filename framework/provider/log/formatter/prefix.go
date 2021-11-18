@@ -8,7 +8,7 @@
 
 package formatter
 
-import "github.com/gojiangbo/jiangbo/framework/contract"
+import "github.com/jiangbo202/hade_x/framework/contract"
 
 func Prefix(level contract.LogLevel) string {
 	prefix := ""

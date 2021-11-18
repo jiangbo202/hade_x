@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gojiangbo/jiangbo/framework"
-	"github.com/gojiangbo/jiangbo/framework/contract"
+	"github.com/jiangbo202/hade_x/framework"
+	"github.com/jiangbo202/hade_x/framework/contract"
 
 	"github.com/mitchellh/mapstructure"
 	"github.com/spf13/cast"

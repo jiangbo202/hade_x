@@ -11,10 +11,10 @@ package command
 import (
 	"fmt"
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/gojiangbo/jiangbo/framework"
-	"github.com/gojiangbo/jiangbo/framework/cobra"
-  "github.com/gojiangbo/jiangbo/framework/contract"
-  "github.com/gojiangbo/jiangbo/framework/util"
+	"github.com/jiangbo202/hade_x/framework"
+	"github.com/jiangbo202/hade_x/framework/cobra"
+  "github.com/jiangbo202/hade_x/framework/contract"
+  "github.com/jiangbo202/hade_x/framework/util"
   "github.com/pkg/errors"
   "os"
   "path/filepath"
@@ -175,7 +175,7 @@ type Service interface {
 var providerTmp string = `package {{.}}
 
 import (
-	"github.com/gojiangbo/jiangbo/framework"
+	"github.com/jiangbo202/hade_x/framework"
 )
 
 type {{.|title}}Provider struct {
@@ -208,7 +208,7 @@ func (sp *{{.|title}}Provider) Boot(c framework.Container) error {
 
 var serviceTmp string = `package {{.}}
 
-import "github.com/gojiangbo/jiangbo/framework"
+import "github.com/jiangbo202/hade_x/framework"
 
 type {{.|title}}Service struct {
 	container framework.Container

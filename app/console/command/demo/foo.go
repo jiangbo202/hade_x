@@ -9,7 +9,7 @@
 package demo
 
 import (
-	"github.com/gojiangbo/jiangbo/framework/cobra"
+	"github.com/jiangbo202/hade_x/framework/cobra"
 	"log"
 )
 

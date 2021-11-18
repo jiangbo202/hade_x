@@ -10,8 +10,8 @@ package command
 
 import (
 	"context"
-	"github.com/gojiangbo/jiangbo/framework/cobra"
-	"github.com/gojiangbo/jiangbo/framework/contract"
+	"github.com/jiangbo202/hade_x/framework/cobra"
+	"github.com/jiangbo202/hade_x/framework/contract"
 	"log"
 	"net/http"
 	"os"

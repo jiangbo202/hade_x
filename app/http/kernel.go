@@ -8,7 +8,7 @@
 
 package http
 
-import "github.com/gojiangbo/jiangbo/framework/gin"
+import "github.com/jiangbo202/hade_x/framework/gin"
 
 // NewHttpEngine 创建了一个绑定了路由的Web引擎
 func NewHttpEngine() (*gin.Engine, error) {

@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/gojiangbo/jiangbo/framework/gin"
+	"github.com/jiangbo202/hade_x/framework/gin"
 	"log"
 	"time"
 )

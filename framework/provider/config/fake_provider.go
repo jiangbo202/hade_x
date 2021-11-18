@@ -1,8 +1,8 @@
 package config
 
 import (
-	"github.com/gojiangbo/jiangbo/framework"
-	"github.com/gojiangbo/jiangbo/framework/contract"
+	"github.com/jiangbo202/hade_x/framework"
+	"github.com/jiangbo202/hade_x/framework/contract"
 )
 
 type FakeConfigProvider struct {

@@ -8,7 +8,7 @@
 
 package cobra
 
-import "github.com/gojiangbo/jiangbo/framework/contract"
+import "github.com/jiangbo202/hade_x/framework/contract"
 
 // MustMakeApp 从容器中获取App服务
 func (c *Command) MustMakeApp() contract.App {

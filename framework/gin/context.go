@@ -7,7 +7,7 @@ package gin
 import (
 	"errors"
 	"fmt"
-	"github.com/gojiangbo/jiangbo/framework"
+	"github.com/jiangbo202/hade_x/framework"
 	"io"
 	"io/ioutil"
 	"math"
@@ -21,8 +21,8 @@ import (
 	"time"
 
 	"github.com/gin-contrib/sse"
-	"github.com/gojiangbo/jiangbo/framework/gin/binding"
-	"github.com/gojiangbo/jiangbo/framework/gin/render"
+	"github.com/jiangbo202/hade_x/framework/gin/binding"
+	"github.com/jiangbo202/hade_x/framework/gin/render"
 )
 
 // Content-Type MIME of the most common data formats.

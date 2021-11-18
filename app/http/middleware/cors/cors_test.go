@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gojiangbo/jiangbo/framework/gin"
+	"github.com/jiangbo202/hade_x/framework/gin"
 	"github.com/stretchr/testify/assert"
 )
 

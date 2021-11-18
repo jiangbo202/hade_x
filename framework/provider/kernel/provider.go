@@ -9,9 +9,9 @@
 package kernel
 
 import (
-	"github.com/gojiangbo/jiangbo/framework"
-	"github.com/gojiangbo/jiangbo/framework/contract"
-	"github.com/gojiangbo/jiangbo/framework/gin"
+	"github.com/jiangbo202/hade_x/framework"
+	"github.com/jiangbo202/hade_x/framework/contract"
+	"github.com/jiangbo202/hade_x/framework/gin"
 )
 
 type JiangKernelProvider struct {

@@ -9,7 +9,7 @@
 package cobra
 
 import (
-	"github.com/gojiangbo/jiangbo/framework/contract"
+	"github.com/jiangbo202/hade_x/framework/contract"
 	"github.com/robfig/cron/v3"
 	"log"
 	"time"

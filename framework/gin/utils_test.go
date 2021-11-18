@@ -86,7 +86,7 @@ func TestFilterFlags(t *testing.T) {
 }
 
 func TestFunctionName(t *testing.T) {
-	assert.Regexp(t, `^(.*/vendor/)?github.com/gojiangbo/jiangbo/framework/gin.somefunction$`, nameOfFunction(somefunction))
+	assert.Regexp(t, `^(.*/vendor/)?github.com/jiangbo202/hade_x/framework/gin.somefunction$`, nameOfFunction(somefunction))
 }
 
 func somefunction() {

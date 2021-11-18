@@ -9,10 +9,10 @@
 package console
 
 import (
-	"github.com/gojiangbo/jiangbo/app/console/command/demo"
-	"github.com/gojiangbo/jiangbo/framework"
-	"github.com/gojiangbo/jiangbo/framework/cobra"
-	"github.com/gojiangbo/jiangbo/framework/command"
+	"github.com/jiangbo202/hade_x/app/console/command/demo"
+	"github.com/jiangbo202/hade_x/framework"
+	"github.com/jiangbo202/hade_x/framework/cobra"
+	"github.com/jiangbo202/hade_x/framework/command"
 )
 
 // RunCommand  初始化根Command并运行

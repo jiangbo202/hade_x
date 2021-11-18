@@ -10,9 +10,9 @@ package services
 
 import (
 	"fmt"
-	"github.com/gojiangbo/jiangbo/framework"
-	"github.com/gojiangbo/jiangbo/framework/contract"
-	"github.com/gojiangbo/jiangbo/framework/util"
+	"github.com/jiangbo202/hade_x/framework"
+	"github.com/jiangbo202/hade_x/framework/contract"
+	"github.com/jiangbo202/hade_x/framework/util"
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
 	"github.com/pkg/errors"
 	"os"

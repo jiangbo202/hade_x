@@ -11,7 +11,7 @@ package formatter
 import (
 	"bytes"
 	"fmt"
-	"github.com/gojiangbo/jiangbo/framework/contract"
+	"github.com/jiangbo202/hade_x/framework/contract"
 	"time"
 )
 

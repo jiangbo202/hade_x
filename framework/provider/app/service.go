@@ -11,8 +11,8 @@ package app
 import (
 
 	"flag"
-	"github.com/gojiangbo/jiangbo/framework"
-	"github.com/gojiangbo/jiangbo/framework/util"
+	"github.com/jiangbo202/hade_x/framework"
+	"github.com/jiangbo202/hade_x/framework/util"
 	"github.com/google/uuid"
 	"github.com/pkg/errors"
 	"path/filepath"

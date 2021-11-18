@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gojiangbo/jiangbo/framework/gin/testdata/protoexample"
+	"github.com/jiangbo202/hade_x/framework/gin/testdata/protoexample"
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/assert"
 )

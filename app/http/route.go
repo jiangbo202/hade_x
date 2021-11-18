@@ -9,9 +9,9 @@
 package http
 
 import (
-	"github.com/gojiangbo/jiangbo/app/http/module/demo"
-	"github.com/gojiangbo/jiangbo/framework/gin"
-	"github.com/gojiangbo/jiangbo/framework/middleware/static"
+	"github.com/jiangbo202/hade_x/app/http/module/demo"
+	"github.com/jiangbo202/hade_x/framework/gin"
+	"github.com/jiangbo202/hade_x/framework/middleware/static"
 )
 
 // Routes 绑定业务层路由

@@ -11,9 +11,9 @@ package command
 import (
 	"fmt"
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/gojiangbo/jiangbo/framework/cobra"
-	"github.com/gojiangbo/jiangbo/framework/contract"
-	"github.com/gojiangbo/jiangbo/framework/util"
+	"github.com/jiangbo202/hade_x/framework/cobra"
+	"github.com/jiangbo202/hade_x/framework/contract"
+	"github.com/jiangbo202/hade_x/framework/util"
 	"github.com/pkg/errors"
 	"os"
 	"path/filepath"
@@ -140,7 +140,7 @@ var cmdTmpl string = `package {{.}}
 import (
 	"fmt"
 
-	"github.com/gojiangbo/jiangbo/framework/cobra"
+	"github.com/jiangbo202/hade_x/framework/cobra"
 )
 
 var {{.|title}}Command = &cobra.Command{

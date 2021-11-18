@@ -10,7 +10,7 @@ package command
 
 import (
   "fmt"
-  "github.com/gojiangbo/jiangbo/framework/cobra"
+  "github.com/jiangbo202/hade_x/framework/cobra"
   "log"
   "os/exec"
 )
@@ -45,7 +45,7 @@ var buildSelfCommand = &cobra.Command{
       log.Fatalln("hade go: please install go in path first")
     }
 
-    cmd := exec.Command(path, "build", "-o", "jiangbo", "./")
+    cmd := exec.Command(path, "build", "-o", "hade_x", "./")
     out, err := cmd.CombinedOutput()
     if err != nil {
       fmt.Println("go build error:")
@@ -53,7 +53,7 @@ var buildSelfCommand = &cobra.Command{
       fmt.Println("--------------")
       return err
     }
-    fmt.Println("build success please run ./jiangbo direct")
+    fmt.Println("build success please run ./hade_x direct")
     return nil
   },
 }
