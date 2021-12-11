@@ -8,14 +8,19 @@
 
 package http
 
-import "github.com/jiangbo202/hade_x/framework/gin"
+import (
+  "github.com/jiangbo202/hade_x/framework"
+  "github.com/jiangbo202/hade_x/framework/gin"
+)
 
 // NewHttpEngine 创建了一个绑定了路由的Web引擎
-func NewHttpEngine() (*gin.Engine, error) {
+func NewHttpEngine(container framework.Container) (*gin.Engine, error) {
 	// 设置为Release，为的是默认在启动中不输出调试信息
 	gin.SetMode(gin.ReleaseMode)
 	// 默认启动一个Web引擎
-	r := gin.Default()
+	r := gin.New()
+  r.SetContainer(container)
+  r.Use(gin.Recovery())
 
 	// 业务绑定路由操作
 	Routes(r)

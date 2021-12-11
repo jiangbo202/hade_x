@@ -30,4 +30,8 @@ func AddKernelCommands(root *cobra.Command) {
   root.AddCommand(initCmdCommand())
   // 自动化中间件迁移工具
   root.AddCommand(initMiddlewareCommand())
+  // 初始化新项目
+  root.AddCommand(initNewCommand())
+  // 接口文档
+  root.AddCommand(initSwaggerCommand())
 }

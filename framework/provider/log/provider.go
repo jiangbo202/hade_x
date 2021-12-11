@@ -32,7 +32,7 @@ type JiangLogServiceProvider struct {
 }
 
 func (j JiangLogServiceProvider) Name() string {
-	panic("implement me")
+	return contract.LogKey
 }
 
 // Register 注册一个服务实例
@@ -91,11 +91,11 @@ func (j *JiangLogServiceProvider) Params(c framework.Container) []interface{} {
 }
 
 func (j JiangLogServiceProvider) IsDefer() bool {
-	panic("implement me")
+	return false
 }
 
 func (j JiangLogServiceProvider) Boot(Container framework.Container) error {
-	panic("implement me")
+	return nil
 }
 
 // logLevel get level from string
